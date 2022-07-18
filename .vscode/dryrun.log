@@ -1,0 +1,5 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'e:/workspace/prototest'
+g++ -std=c++11 *.cpp *.cc -o test -I D:\protobuf_src\install\include -L ./ -lprotobuf -lprotoc -llibprotobuf-lite
+make: Leaving directory 'e:/workspace/prototest'
+ 
