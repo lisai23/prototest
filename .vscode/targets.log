@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 17 18:03:20 2022
+# Make data base, printed on Sun Jul 31 12:29:47 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -35,7 +37,9 @@ MAKE_COMMAND := make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16468_YCGLMPRJDNECQOYS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4616_ZIRCNPVCWMUNVMVP
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -47,7 +51,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\lisai\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+VSCODE_CODE_CACHE_PATH = C:\Users\lisai\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # default
@@ -63,7 +67,7 @@ ONEDRIVE = C:\Users\lisai\OneDrive
 # makefile
 CURDIR := e:/workspace/prototest
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -81,19 +85,15 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 16468
+VSCODE_PID = 4616
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
 *F = $(notdir $*)
-# environment
-LIB = D:\protobuf-3.3.0\lib;D:\protobuf\install\lib
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn\\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn\\corrupted.info","_languagePackSupport":true}
-# environment
-INCLUDE = D:\protoc-3.20.1-rc-1-win64\include;D:\protobuf-3.3.0\include;D:\protobuf\install\include;
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn\\3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"C:\\Users\\lisai\\AppData\\Roaming\\Code\\clp\\1d735750dbb1b9066c7513078396ba0f.zh-cn\\corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := Windows32
 # environment
@@ -115,7 +115,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\cmake\bin;C:\Program Files\dotnet\;D:\mingw\bin;C:\Users\lisai\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\lisai\.dotnet\tools;D:\mingw\bin;
+PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\cmake\bin;C:\Program Files\dotnet\;D:\mingw\bin;D:\TortoiseGit\bin;C:\Users\lisai\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\lisai\.dotnet\tools;D:\mingw\bin;
 # environment
 COMPUTERNAME = DESKTOP-3ADUCQI
 # default
@@ -148,10 +148,8 @@ GNUMAKEFLAGS :=
 VS140COMNTOOLS = D:\Microsoft Visual Studio 14.0\Common7\Tools\
 # environment
 OS = Windows_NT
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
 # makefile
-.DEFAULT_GOAL := test
+.DEFAULT_GOAL := a
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -177,7 +175,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = E:\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\ee20055c59da20b1b54b0b74fd26c1bb-1.69.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\ee20055c59da20b1b54b0b74fd26c1bb-1.69.2-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -195,7 +193,7 @@ PROCESSOR_REVISION = 9705
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 151 Stepping 5, GenuineIntel
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=7/118=6%
+# Load=90/1024=9%, Rehash=0, Collisions=8/117=7%
 
 # Pattern-specific Variable Values
 
@@ -203,15 +201,29 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 151 Stepping 5, GenuineIntel
 
 # Directories
 
-# . (key e:/workspace/prototest, mtime 1658052106): 12 files, no impossibilities.
+# . (key e:/workspace/prototest, mtime 1659241779): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
+
+a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 4):
+	$(CXX) *.cpp *.cc -o test -I D:\protobuf\include -L ./ -lprotobuf -lprotobuf-lite -lprotoc
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 7):
+	rm -r *.o test.exe
 
 # Not a target:
 .DEFAULT:
@@ -226,40 +238,27 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-test: main.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 2):
-	g++ -std=c++11 *.cpp *.cc -o test -I D:\protobuf_src\install\include -L ./ -lprotobuf -lprotoc -llibprotobuf-lite
-
-# Not a target:
-main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-17 18:03:20
+#  Last modified 2022-07-31 12:29:35
 #  File has been updated.
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 160 B / avg = 9 B
-# current buf: size = 8162 B / used = 160 B / count = 17 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 164 B / avg = 8 B
+# current buf: size = 8162 B / used = 164 B / count = 19 / avg = 8 B
 
-# strcache performance: lookups = 22 / hit rate = 22%
+# strcache performance: lookups = 25 / hit rate = 24%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Sun Jul 17 18:03:20 2022
+# Load=19/8192=0%, Rehash=0, Collisions=0/25=0%
+# Finished Make data base on Sun Jul 31 12:29:47 2022
 
  
