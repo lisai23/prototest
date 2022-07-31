@@ -1,5 +1,5 @@
 make.exe --dry-run --keep-going --print-directory
 make: Entering directory 'e:/workspace/prototest'
-g++ *.cpp *.cc -o test -I D:\protobuf\include -L ./ -lprotobuf -lprotobuf-lite -lprotoc
+g++ *.cpp *.cc -o test -I d:/protobuf/include -L d:/protobuf/lib -lprotobuf -lprotoc -lprotobuf-lite
 make: Leaving directory 'e:/workspace/prototest'
  

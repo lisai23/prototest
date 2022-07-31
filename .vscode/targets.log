@@ -8,12 +8,10 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 31 12:29:47 2022
+# Make data base, printed on Sun Jul 31 13:07:34 2022
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -37,9 +35,7 @@ MAKE_COMMAND := make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4616_ZIRCNPVCWMUNVMVP
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9572_VIBXAVBESPUUHCQK
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -85,7 +81,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 4616
+VSCODE_PID = 9572
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -115,7 +111,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\cmake\bin;C:\Program Files\dotnet\;D:\mingw\bin;D:\TortoiseGit\bin;C:\Users\lisai\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\lisai\.dotnet\tools;D:\mingw\bin;
+PATH = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\cmake\bin;C:\Program Files\dotnet\;D:\mingw\bin;D:\TortoiseGit\bin;C:\Users\lisai\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\lisai\.dotnet\tools;D:\mingw\bin;D:\protobuf\bin;
 # environment
 COMPUTERNAME = DESKTOP-3ADUCQI
 # default
@@ -193,7 +189,7 @@ PROCESSOR_REVISION = 9705
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 151 Stepping 5, GenuineIntel
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=8/117=7%
+# Load=88/1024=9%, Rehash=0, Collisions=7/115=6%
 
 # Pattern-specific Variable Values
 
@@ -201,7 +197,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 151 Stepping 5, GenuineIntel
 
 # Directories
 
-# . (key e:/workspace/prototest, mtime 1659241779): 14 files, no impossibilities.
+# . (key e:/workspace/prototest, mtime 1659244051): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
 
@@ -216,14 +212,7 @@ a:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 4):
-	$(CXX) *.cpp *.cc -o test -I D:\protobuf\include -L ./ -lprotobuf -lprotobuf-lite -lprotoc
-
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 7):
-	rm -r *.o test.exe
+	$(CXX) *.cpp *.cc -o test -I d:/protobuf/include -L d:/protobuf/lib -lprotobuf -lprotoc -lprotobuf-lite
 
 # Not a target:
 .DEFAULT:
@@ -241,24 +230,24 @@ all:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-31 12:29:35
+#  Last modified 2022-07-31 13:07:09
 #  File has been updated.
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 164 B / avg = 8 B
-# current buf: size = 8162 B / used = 164 B / count = 19 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 173 B / avg = 9 B
+# current buf: size = 8162 B / used = 173 B / count = 18 / avg = 9 B
 
-# strcache performance: lookups = 25 / hit rate = 24%
+# strcache performance: lookups = 23 / hit rate = 21%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Sun Jul 31 12:29:47 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/23=0%
+# Finished Make data base on Sun Jul 31 13:07:34 2022
 
  
